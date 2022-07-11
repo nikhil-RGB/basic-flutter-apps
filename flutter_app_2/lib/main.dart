@@ -6,6 +6,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
+    var list = [];
     return new MaterialApp(
         home: new Scaffold(
       appBar: new AppBar(
@@ -13,7 +14,25 @@ class MyApp extends StatelessWidget {
           "My second app",
         ),
       ),
-      body: new Text('Some text here!'),
+      body: new Column(children: [
+        new Text('The question'),
+        new RaisedButton(
+          child: new Text('Answer 1'),
+          onPressed: null,
+        ),
+        new RaisedButton(
+          child: new Text('Answer 2'),
+          onPressed: null,
+        ),
+        new RaisedButton(
+          child: new Text('Answer 3'),
+          onPressed: null,
+        ),
+        new RaisedButton(
+          child: new Text('Answer 4'),
+          onPressed: null,
+        ),
+      ]),
     ));
   }
 }
